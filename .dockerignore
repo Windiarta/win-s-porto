@@ -1,0 +1,10 @@
+node_modules
+dist
+.git
+.staging
+tools
+.dom-dump.html
+.console.log
+verify.sh
+*.md
+!README.md

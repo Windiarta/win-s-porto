@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Windiarta - Resume</title>
+    <!-- Print source for public/resume.pdf. Regenerate from project root:
+         "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new
+         --disable-gpu --no-pdf-header-footer --print-to-pdf=public/resume.pdf
+         file:///absolute/path/to/tools/resume.html
+         Phone intentionally omitted (owner decision). -->
+    <style>
+      @page { margin: 14mm 15mm; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 10.5px; line-height: 1.45; color: #1a1a1a; }
+      h1 { font-size: 22px; letter-spacing: 0.04em; }
+      .head { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #1a1a1a; padding-bottom: 8px; margin-bottom: 14px; }
+      .head .links { text-align: right; color: #444; }
+      h2 { font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em; margin: 14px 0 6px; border-bottom: 1px solid #ccc; padding-bottom: 3px; }
+      .job { margin-bottom: 10px; }
+      .job-head { display: flex; justify-content: space-between; font-weight: 700; }
+      .job-head .period { font-weight: 400; color: #444; white-space: nowrap; }
+      .role { font-style: italic; color: #333; margin-bottom: 4px; }
+      ul { margin-left: 16px; }
+      li { margin-bottom: 2px; }
+      .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+      table { width: 100%; border-collapse: collapse; }
+      td { padding: 2px 0; vertical-align: top; }
+      td.year { text-align: right; color: #444; white-space: nowrap; width: 40px; }
+      .skills td:first-child { font-weight: 700; width: 130px; }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <div>
+        <h1>WINDIARTA</h1>
+        <div>Software &amp; AI Engineer / Jakarta, Indonesia</div>
+      </div>
+      <div class="links">
+        windiarta.widjaja@gmail.com<br />
+        windiarta.my.id / linkedin.com/in/windiarta
+      </div>
+    </div>
+
+    <h2>Professional Summary</h2>
+    <p>Software &amp; AI Engineer with 2+ years experience building enterprise-scale AI platforms and data infrastructure at a Fortune-500 state-owned enterprise. Deep expertise in FastAPI, Next.js/React, Google ADK, Snowflake Medallion Architecture, Data Vault 2.0, and Agentic RAG. Built a multi-agent AI platform serving 9 AI agents across 7 business units. Reduced LLM costs by 90%+, cut data query time from 1 week to under 2 minutes, and delivered data governance solutions across all subsidiaries.</p>
+
+    <h2>Technical Skills</h2>
+    <table class="skills">
+      <tr><td>Backend</td><td>Python (FastAPI, SQLAlchemy, Pytest), Node.js, REST APIs, SSE Streaming, LiteLLM</td></tr>
+      <tr><td>Frontend</td><td>TypeScript/JavaScript, Next.js, React 19, Zustand, React Query, Laravel</td></tr>
+      <tr><td>AI &amp; Agents</td><td>Google ADK, CrewAI, LangChain, RAG (Qdrant), Gemini API, Self-Hosted LLMs (Ollama), MCP</td></tr>
+      <tr><td>Data Engineering</td><td>Snowflake (DMF, Dynamic Tables, Cortex), Medallion Architecture, Data Vault 2.0 (Hubs, Links, Satellites, PIT, Bridge), Airbyte, dbt, Vector Search</td></tr>
+      <tr><td>Cloud &amp; Infra</td><td>GCP (Cloud Run, Cloud Logging), AWS, Docker, GitLab CI/CD, On-Premise</td></tr>
+      <tr><td>Security</td><td>SSO, JWT, MFA, RBAC, API Gateway, Audit Logging, PII Compliance (UU PDP)</td></tr>
+      <tr><td>Mobile</td><td>Android Native (Jetpack Compose)</td></tr>
+    </table>
+
+    <h2>Professional Experience</h2>
+    <div class="job">
+      <div class="job-head"><span>PT Pupuk Indonesia (Persero), Jakarta</span><span class="period">Sept 2024 - Present</span></div>
+      <div class="role">Software &amp; AI Engineer (SnowPoint Team)</div>
+      <ul>
+        <li>Engineered PINTER multi-agent AI platform backend (FastAPI + Google ADK), orchestrating 9 AI agents across 7 business units: AEGIS AI, Sentra AI, PAC Agent, AYU, KITA Apps, RAMA, SINTA, Travel Expense, RISK AI Agent.</li>
+        <li>Implemented SSE streaming for real-time agent execution with 98%+ uptime, multi-model LLM routing via LiteLLM, vector search (Qdrant), budget enforcement, Human-in-the-Loop approval gates, and safe Python code execution sandbox.</li>
+        <li>Reduced LLM inference cost by 90%+ vs Claude-only through task-specific model routing and company-hosted Ollama models.</li>
+        <li>Built enterprise RAG over 400+ scanned PDFs with role-based document access, user feedback capture, and self-improving agent workflows.</li>
+        <li>Delivered PAC Agent cutting production data consolidation and query from 1 week to under 2 minutes across 5 subsidiaries.</li>
+        <li>Implemented SSO, JWT, MFA, RBAC, encrypted API key access, usage tracking, and audit logging via Cloud Run/Cloud Logging.</li>
+        <li>Led SnowKeeper and SnowMi governance: unified metadata, automated PII detection via custom Data Metric Functions, Data Vault 2.0 PIT/Bridge tables with sub-second historical queries, Airbyte migration, dbt Sodo scheduler.</li>
+        <li>Coordinated 7-person engineering team across AI development, stakeholder delivery, and production support.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head"><span>PT Ghraha Trimitra Selaras, Jakarta</span><span class="period">Jan 2024 - Jul 2026</span></div>
+      <div class="role">Lead Full-Stack Programmer (Part-Time)</div>
+      <ul>
+        <li>Built full-stack dashboards (Next.js, Laravel) for parking (GTS Parking) and vending operations (Jetinno Vending) with EDC/QRIS integration to OCBC Bank, supporting ~250 machines across Pekanbaru.</li>
+        <li>Engineered real-time monitoring and secure user-management dashboard for KB Bank Mini ATMs on Aisino machines.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head"><span>PT Pupuk Indonesia (Persero), Jakarta</span><span class="period">Sept 2023 - Dec 2023</span></div>
+      <div class="role">Data Engineer Intern</div>
+      <ul>
+        <li>Benchmarked leading ETL tools and conducted Snowflake clustering research that informed the organization's data platform architecture decisions.</li>
+      </ul>
+    </div>
+
+    <h2>Selected Projects</h2>
+    <ul>
+      <li><strong>PINTER</strong> (FastAPI, Google ADK, React 19, Qdrant): enterprise AI agent platform with 9 specialized agents, multi-model routing, SSE streaming, RAG, HITL approval gates.</li>
+      <li><strong>Snow Keeper</strong> (Snowflake, FastAPI, FlutterFlow): automated Snowflake resource and access governance across all subsidiaries.</li>
+      <li><strong>DS AI Service</strong> (FastAPI, RAG, Gemini): RAG-based semantic search over company work instructions and guidelines.</li>
+      <li><strong>Nura Academy</strong> (Next.js, Prisma, PostgreSQL): e-learning platform with automated notifications, assignment workflows, unit-test suite.</li>
+      <li><strong>GTS Parking / Jetinno Vending</strong> (Next.js, Laravel, React): real-time parking and vending dashboards with QRIS/EDC payments to OCBC Bank.</li>
+    </ul>
+
+    <div class="cols">
+      <div>
+        <h2>Education</h2>
+        <p><strong>Universitas Indonesia</strong><br />Bachelor of Computer Engineering, 2020 - 2024<br />GPA 3.63 / 4.00 / Bangkit Academy 2023 (Mobile Development)</p>
+        <h2>Languages</h2>
+        <p>Indonesian (Native), English (Professional)</p>
+      </div>
+      <div>
+        <h2>Certifications</h2>
+        <table>
+          <tr><td>Google Cloud AI Live + Labs, Google Cloud</td><td class="year">2026</td></tr>
+          <tr><td>Northstar - Agentic AI, Snowflake</td><td class="year">2025</td></tr>
+          <tr><td>Dataiku Core + Advanced Designer</td><td class="year">2025</td></tr>
+          <tr><td>Enhance Gemini Model Capabilities, Google</td><td class="year">2025</td></tr>
+          <tr><td>Gemini Multimodality &amp; Multimodal RAG, Google</td><td class="year">2025</td></tr>
+          <tr><td>Architecting on AWS, ICS Compute</td><td class="year">2024</td></tr>
+          <tr><td>Machine Learning with Python L1, IBM</td><td class="year">2023</td></tr>
+        </table>
+        <h2>Leadership &amp; Community</h2>
+        <ul>
+          <li>Bangkit Academy Class Mentor (2024 - 2025)</li>
+          <li>UI Digital Laboratory Teaching Assistant (2022 - 2024)</li>
+          <li>Head of R&amp;D, Keluarga Mahasiswa Buddhis UI (2023)</li>
+          <li>Dataiku Indonesia User Community, workshop support (2025)</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
