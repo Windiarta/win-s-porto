@@ -481,6 +481,17 @@ h2 {
   min-height: 150px;
 }
 
+/* agent + job cards use 20px padding; bleed matches (see .card-img-wrap) */
+.agent-card .card-img-wrap,
+.job-entry .card-img-wrap {
+  margin: -20px -20px 16px;
+}
+
+.agent-card .card-img,
+.job-entry .card-img {
+  height: 120px;
+}
+
 .agent-name {
   font-family: var(--font-mono);
   font-weight: 600;
@@ -590,6 +601,31 @@ h2 {
   }
 }
 
+/* Case page banner: same duotone treatment, wide crop (DESIGN.md image rationale) */
+.case-banner {
+  margin: 0 0 56px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.case-banner img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  filter: grayscale(1) brightness(0.55) contrast(1.1);
+}
+
+.case-banner::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(11, 11, 13, 0.3), rgba(11, 11, 13, 0) 40%, rgba(11, 11, 13, 0.6));
+  pointer-events: none;
+}
+
 /* ---------- Experience ---------- */
 .experience {
   padding: 120px 0;
@@ -603,6 +639,19 @@ h2 {
   padding-left: 40px;
   display: grid;
   gap: 72px;
+}
+
+/* job-entry cards get a surface so the photo has something to sit on */
+.job-entry {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.job-entry:hover,
+.job-entry:focus-within {
+  border-color: var(--accent-deep);
 }
 
 .job-head {
@@ -952,6 +1001,106 @@ h2 {
 
 .footer a:hover {
   color: var(--accent);
+}
+
+.footer-links {
+  display: inline-flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.credits-toggle {
+  background: none;
+  border: none;
+  font: inherit;
+  color: var(--muted);
+  cursor: pointer;
+  padding: 0;
+}
+
+.credits-toggle:hover {
+  color: var(--accent);
+}
+
+.credits-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.credits-panel {
+  padding: 28px 0 8px;
+}
+
+.credits-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.credits-list {
+  list-style: none;
+  columns: 2;
+  column-gap: 40px;
+  font-size: 12.5px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+.credits-list a {
+  color: var(--text);
+}
+
+@media (max-width: 700px) {
+  .credits-list {
+    columns: 1;
+  }
+}
+
+/* ---------- Card images: one treatment, brand-wide ----------
+   All photos are real CC-licensed shots (see imageCredits in portfolio.ts),
+   subject-matched to each card (R-23/R-38, R-31: relevance is the reason).
+   Duotone-ish amber treatment keeps random photography inside the dark
+   amber identity (DESIGN.md); hover restores partial color as a signal
+   that the card is alive. */
+.card-img-wrap {
+  position: relative;
+  margin: -30px -30px 0; /* bleed to card edges on project cards */
+  overflow: hidden;
+}
+
+.card-img-wrap::after {
+  /* bottom fade so the photo settles into the card surface, text stays readable (R-25) */
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(11, 11, 13, 0.15), rgba(11, 11, 13, 0) 35%, rgba(11, 11, 13, 0.55) 85%, var(--surface));
+  pointer-events: none;
+}
+
+.card-img {
+  display: block;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  filter: grayscale(1) brightness(0.55) contrast(1.1);
+  transition: filter 0.35s ease, transform 0.35s ease;
+}
+
+/* Amber-pass on hover: partial color return, not a second palette (R-01) */
+.project-card:hover .card-img,
+.project-card:focus-within .card-img,
+.agent-card:hover .card-img,
+.agent-card:focus-within .card-img,
+.job-entry:hover .card-img,
+.job-entry:focus-within .card-img {
+  filter: grayscale(0.35) brightness(0.68) sepia(0.35) saturate(1.6) hue-rotate(-8deg);
+  transform: scale(1.03);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-img {
+    transition: none;
+  }
 }
 
 /* ---------- React Bits overrides (brand-fit) ---------- */

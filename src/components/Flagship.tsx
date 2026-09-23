@@ -80,6 +80,9 @@ const Flagship = () => {
                 className="card-link"
                 aria-label={`${a.name}: open agent detail`}
               />
+              <div className="card-img-wrap">
+                <img className="card-img" src={a.img} alt="" loading="lazy" width="1280" height="854" />
+              </div>
               <div className="agent-name">{a.name}</div>
               <div className="agent-unit">{a.unit}</div>
               <p className="agent-desc">{a.desc}</p>

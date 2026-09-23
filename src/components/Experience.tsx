@@ -22,6 +22,9 @@ const Experience = () => (
                 className="card-link"
                 aria-label={`${job.company}, ${job.role}: open full detail`}
               />
+              <div className="card-img-wrap">
+                <img className="card-img" src={job.img} alt="" loading="lazy" width="1280" height="854" />
+              </div>
               <div className="job-head">
                 <h3 className="job-company">{job.company}</h3>
                 <span className="job-period">{job.period}</span>

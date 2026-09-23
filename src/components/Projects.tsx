@@ -42,6 +42,9 @@ const Projects = () => (
                 aria-label={`${p.name}: open case study`}
               />
               <div className="project-inner">
+                <div className="card-img-wrap">
+                  <img className="card-img" src={p.img} alt="" loading="lazy" width="1280" height="854" />
+                </div>
                 <h3 className="project-name">{p.name}</h3>
                 <p className="project-desc">{p.desc}</p>
                 <ul className="project-stack" aria-label={`${p.name} stack`}>

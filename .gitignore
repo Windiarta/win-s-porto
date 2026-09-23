@@ -4,6 +4,7 @@
 *.log*
 .dom-*.html
 .shot-*.png
+.netlify
 
 # Dist
 node_modules

@@ -94,6 +94,14 @@ const CaseStudy = ({ kind }: { kind: StudyKind }) => {
           </div>
         </div>
 
+        {study.heroImg && (
+          <FadeContent duration={700} className="container">
+            <figure className="case-banner">
+              <img src={study.heroImg} alt="" width="1280" height="854" loading="eager" />
+            </figure>
+          </FadeContent>
+        )}
+
         <div className="container case-body">
           {study.pipeline && (
             <AnimatedContent distance={24} duration={0.7}>

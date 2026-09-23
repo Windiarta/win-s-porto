@@ -13,6 +13,7 @@ export type Study = {
   eyebrow: string;
   title: string;
   full?: string;
+  heroImg?: string;
   meta: { label: string; value: string }[];
   intro: string;
   pipeline?: PipelineStep[];
@@ -37,6 +38,7 @@ export const projectStudies: Record<string, Study> = {
   pinter: {
     eyebrow: 'Case study',
     title: 'PINTER',
+    heroImg: '/img/pinter.jpg',
     full: 'Pupuk Intelligence Center',
     meta: [
       { label: 'Role', value: 'Backend & platform engineering' },
@@ -133,6 +135,7 @@ export const projectStudies: Record<string, Study> = {
   'snow-keeper': {
     eyebrow: 'Case study',
     title: 'Snow Keeper',
+    heroImg: '/img/snowkeeper.jpg',
     full: 'Snowflake governance, automated',
     meta: [
       { label: 'Stack', value: 'Snowflake, FastAPI, FlutterFlow' },
@@ -188,6 +191,7 @@ export const projectStudies: Record<string, Study> = {
   'ds-ai-service': {
     eyebrow: 'Case study',
     title: 'DS AI Service',
+    heroImg: '/img/dsai.jpg',
     full: 'Internal knowledge, searchable by meaning',
     meta: [
       { label: 'Stack', value: 'FastAPI, Gemini, RAG' },
@@ -221,6 +225,7 @@ export const projectStudies: Record<string, Study> = {
   'nura-academy': {
     eyebrow: 'Case study',
     title: 'Nura Academy',
+    heroImg: '/img/nura.jpg',
     full: 'End-to-end e-learning platform',
     meta: [
       { label: 'Role', value: 'Full-Stack Developer' },
@@ -250,6 +255,7 @@ export const projectStudies: Record<string, Study> = {
   'gts-parking': {
     eyebrow: 'Case study',
     title: 'GTS Parking',
+    heroImg: '/img/gts.jpg',
     full: 'Smart parking monitoring, Pekanbaru',
     meta: [
       { label: 'Company', value: 'PT Ghraha Trimitra Selaras' },
@@ -281,6 +287,7 @@ export const projectStudies: Record<string, Study> = {
   'jetinno-vending': {
     eyebrow: 'Case study',
     title: 'Jetinno Vending',
+    heroImg: '/img/jetinno.jpg',
     full: 'Vending operations and payments',
     meta: [
       { label: 'Company', value: 'PT Ghraha Trimitra Selaras' },
@@ -325,6 +332,7 @@ export const agentStudies: Record<string, Study> = {
   'aegis-ai': {
     eyebrow: 'Agent',
     title: 'AEGIS AI',
+    heroImg: '/img/aegis.jpg',
     meta: [
       { label: 'Business unit', value: 'Marketing' },
       { label: 'Runs on', value: 'PINTER' },
@@ -350,6 +358,7 @@ export const agentStudies: Record<string, Study> = {
   'sentra-ai': {
     eyebrow: 'Agent',
     title: 'Sentra AI',
+    heroImg: '/img/sentra.jpg',
     meta: [
       { label: 'Business unit', value: 'SMTI' },
       { label: 'Runs on', value: 'PINTER' },
@@ -375,6 +384,7 @@ export const agentStudies: Record<string, Study> = {
   'pac-agent': {
     eyebrow: 'Agent',
     title: 'PAC Agent',
+    heroImg: '/img/pac.jpg',
     full: 'Production Analytics Center',
     meta: [
       { label: 'Business unit', value: 'Production' },
@@ -401,6 +411,7 @@ export const agentStudies: Record<string, Study> = {
   ayu: {
     eyebrow: 'Agent',
     title: 'AYU',
+    heroImg: '/img/ayu.jpg',
     full: 'Agronomis yang Unggul',
     meta: [
       { label: 'Business unit', value: 'Marketing' },
@@ -427,6 +438,7 @@ export const agentStudies: Record<string, Study> = {
   'kita-apps': {
     eyebrow: 'Agent',
     title: 'KITA Apps',
+    heroImg: '/img/kita.jpg',
     full: 'Legal Assistant',
     meta: [
       { label: 'Business unit', value: 'Corporate Performance' },
@@ -454,6 +466,7 @@ export const agentStudies: Record<string, Study> = {
   rama: {
     eyebrow: 'Agent',
     title: 'RAMA',
+    heroImg: '/img/rama.jpg',
     full: 'Request and Data Management',
     meta: [
       { label: 'Business unit', value: 'Data Management' },
@@ -481,6 +494,7 @@ export const agentStudies: Record<string, Study> = {
   sinta: {
     eyebrow: 'Agent',
     title: 'SINTA',
+    heroImg: '/img/sinta.jpg',
     meta: [
       { label: 'Business unit', value: 'Data Management' },
       { label: 'Runs on', value: 'PINTER' },
@@ -505,6 +519,7 @@ export const agentStudies: Record<string, Study> = {
   'travel-expense': {
     eyebrow: 'Agent',
     title: 'Travel Expense',
+    heroImg: '/img/travel.jpg',
     meta: [
       { label: 'Business unit', value: 'Human Resources' },
       { label: 'Runs on', value: 'PINTER' },
@@ -530,6 +545,7 @@ export const agentStudies: Record<string, Study> = {
   'risk-ai-agent': {
     eyebrow: 'Agent',
     title: 'RISK AI Agent',
+    heroImg: '/img/risk.jpg',
     meta: [
       { label: 'Business unit', value: 'Risk Management' },
       { label: 'Runs on', value: 'PINTER' },
@@ -557,6 +573,7 @@ export const experienceStudies: Record<string, Study> = {
   'pupuk-indonesia': {
     eyebrow: 'Company',
     title: 'PT Pupuk Indonesia (Persero)',
+    heroImg: '/img/pupuk.jpg',
     meta: [
       { label: 'Role', value: 'Software & AI Engineer, SnowPoint Team' },
       { label: 'Period', value: 'Sept 2024 - Present' },
@@ -620,6 +637,7 @@ export const experienceStudies: Record<string, Study> = {
   'ghraha-trimitra': {
     eyebrow: 'Company',
     title: 'PT Ghraha Trimitra Selaras',
+    heroImg: '/img/ghraha.jpg',
     meta: [
       { label: 'Role', value: 'Lead Full-Stack Programmer (Part-Time)' },
       { label: 'Period', value: 'Jan 2024 - Jul 2026' },
@@ -650,6 +668,7 @@ export const experienceStudies: Record<string, Study> = {
   'bangkit-academy': {
     eyebrow: 'Company',
     title: 'Bangkit Academy',
+    heroImg: '/img/bangkit.jpg',
     meta: [
       { label: 'Role', value: 'Mobile Development Class Mentor' },
       { label: 'Period', value: '2024 - 2025' },
