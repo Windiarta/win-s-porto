@@ -83,7 +83,8 @@ keeps a CSS radial amber fallback so it never looks dead (C-4).
 
 Left-aligned asymmetric hero (not centered template). Stat band = horizontal
 mono strip, not 4 identical cards (6 stats, varied). Projects = asymmetric
-grid: 2 wide + 3 narrow, not clone-cards (R-14). Experience = left-rail
+grid: 2 wide + 4 narrow across 12 columns, hierarchy by size (R-14), perfectly
+filled with zero gaps. Experience = left-rail
 timeline, no icons-in-circles. Certifications = mono table rows, not cards.
 Skills = wall of grouped columns + CSS marquee ticker. Contact = full-bleed
 canvas moment. Section spacing varies (tight band after hero, wide gaps

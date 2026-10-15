@@ -322,6 +322,68 @@ export const projectStudies: Record<string, Study> = {
     ],
     backTo: { label: 'Back to projects', to: '/#projects' },
   },
+  'smart-door-lock': {
+    eyebrow: 'System design',
+    title: 'Smart Door Lock',
+    heroImg: '/img/doorlock.jpg',
+    full: 'Detachable add-on for traditional lever-action doors',
+    meta: [
+      { label: 'Program', value: 'Computer Engineering, Universitas Indonesia' },
+      { label: 'Role', value: 'System Requirements & Architecture' },
+      { label: 'Deliverable', value: 'System Requirements Specification (SRS)' },
+      { label: 'Year', value: '2023' },
+    ],
+    intro:
+      'A detachable add-on that turns a traditional lever-action door lock into a connected one without replacing existing hardware. The device grips the key already in the cylinder and turns it on command from an Android app, with timed access sharing for family and guests.',
+    blocks: [
+      {
+        heading: 'The everyday problems it targets',
+        kind: 'list',
+        items: [
+          'Entering the house with both hands full: turning a physical key becomes the hardest step.',
+          'Lending a physical key for temporary access is risky and difficult to revoke.',
+          'Existing smart locks demand replacing the entire lock mechanism, locking out renters and traditional door owners.',
+        ],
+      },
+      {
+        heading: 'How the physical integration works',
+        kind: 'list',
+        items: [
+          'The detachable unit mounts onto the existing lock without replacing the lock cylinder or handle.',
+          'The device holds the key already inserted into the keyhole and rotates it when triggered.',
+          'An optional handle-pulling mechanism was designed to pull the lever handle down, conditional on motor torque.',
+          'Users control the lock over an encrypted wireless link through a smartphone app.',
+        ],
+      },
+      {
+        heading: 'Specified functional requirements',
+        kind: 'list',
+        items: [
+          'Remote access: lock and unlock remotely via an Android application over an encrypted wireless connection.',
+          'Manual override: mechanical override ensures the door remains operable when a phone is lost or battery is depleted.',
+          'Voice command: integration for locking and unlocking via voice input inside the mobile app.',
+          'Access sharing: grant temporary or permanent access to guests, family, or service workers, backed by an access event log.',
+          'Security and encryption: end-to-end encrypted communication between lock and phone, with strict password enforcement.',
+        ],
+      },
+      {
+        heading: 'Risks, assumptions, and constraints',
+        kind: 'list',
+        items: [
+          'Motor torque risk: servo motors require significantly more torque to pull a door handle than to turn a key. The team scoped the guaranteed mechanism to turning the key, keeping handle-pulling conditional.',
+          'Model constraint: designed specifically for lever-action door locks where the handle and key cylinder are separated.',
+          'Power and weight: battery-powered with easily replaceable cells; lightweight enough to mount without degrading lock performance.',
+          'Operating environment: indoor installation assumed, sheltered from high humidity and extreme heat.',
+        ],
+      },
+      {
+        heading: 'Engineering team',
+        kind: 'para',
+        text: 'Collaborative engineering project developed at Universitas Indonesia by Muhammad Naufal Faza, Michael Harditya, Windiarta, Imam Azka Ramadhan Aditia, and Mochammad Shaffa Prawiranegara. Authored as a formal System Requirements Specification covering mechanical actuation, secure wireless protocol design, and mobile client integration.',
+      },
+    ],
+    backTo: { label: 'Back to projects', to: '/#projects' },
+  },
 };
 
 const platformRelated: RelatedLink[] = [

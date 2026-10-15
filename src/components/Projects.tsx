@@ -9,13 +9,12 @@ const Projects = () => (
     <div className="container">
       <AnimatedContent distance={40} duration={0.8}>
         <div className="section-head">
-          <span className="eyebrow">More shipped work</span>
-          <h2>Five more systems in the field</h2>
-          <p>Governance, knowledge search, e-learning, payments. Built end to end, running in production.</p>
+          <span className="eyebrow">More engineering work</span>
+          <h2>Six systems across enterprise and edge</h2>
+          <p>Governance, knowledge search, e-learning, payments, and embedded hardware. Built end to end.</p>
         </div>
       </AnimatedContent>
-      {/* Asymmetric grid: 2 wide + 3 narrow, hierarchy by size (R-14). Span classes sit on
-          the AnimatedContent wrapper because that div is the grid item.
+      {/* Asymmetric grid: 2 wide + 4 narrow (12-column layout), hierarchy by size (R-14).
           PixelCard amber pixel-bloom on hover/focus: distinct texture from the flagship
           SpotlightCards so sections read different (RHYTHM 3, DESIGN.md).
           Whole card links to its case study via an inset overlay Link (R-26); the link is

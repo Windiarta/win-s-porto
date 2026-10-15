@@ -97,6 +97,14 @@ export const projects = [
     stack: ['Next.js', 'QRIS/EDC', 'OCBC'],
     desc: 'Operations for ~250 machines: live transactions, QRIS payments to OCBC, remote device control.',
   },
+  {
+    name: 'Smart Door Lock',
+    slug: 'smart-door-lock',
+    wide: false,
+    img: '/img/doorlock.jpg',
+    stack: ['IoT', 'Servo Actuation', 'Android'],
+    desc: 'Detachable add-on for traditional lever locks: key-gripping servo motor, encrypted wireless access, and timed visitor permissions.',
+  },
 ];
 
 export const experience = [
@@ -203,25 +211,23 @@ export const languages = [
 ];
 
 // Photography credits (CC-BY / CC-BY-SA require attribution, R-38/C-5).
-// Each image chosen to match its subject: parking lot for GTS, vending
-// machines for Jetinno, snowflake macro for Snow Keeper, and so on.
 export const imageCredits = [
-  { file: '/img/gts.jpg', title: 'Parking lot, Gross-Gerau', artist: 'Matti Blume', license: 'CC BY-SA 4.0', url: 'https://commons.wikimedia.org/wiki/File:Parking_lot,_Gross-Gerau_(P1090665).jpg' },
-  { file: '/img/jetinno.jpg', title: 'I had a terrific strong coffee from this vending machine', artist: 'Matt Brown', license: 'CC BY 2.0', url: 'https://commons.wikimedia.org/wiki/File:I_had_a_terrific_strong_coffee_from_this_vending_machine_(48624680187).jpg' },
-  { file: '/img/snowkeeper.jpg', title: 'Real snowflake macro photo', artist: 'Alexey Kljatov', license: 'CC BY-SA 4.0', url: 'https://commons.wikimedia.org/wiki/File:Real_snowflake_macro_photo_2021-02-11_1.jpg' },
-  { file: '/img/dsai.jpg', title: 'Books on shelves', artist: 'Glossyqueen', license: 'CC BY-SA 4.0', url: 'https://commons.wikimedia.org/wiki/File:Books_on_shelves_(121).jpg' },
-  { file: '/img/nura.jpg', title: 'Setup Virtual Classroom', artist: 'Garry Knight', license: 'CC BY-SA 4.0', url: 'https://commons.wikimedia.org/wiki/File:Setup_Virtual_Classroom.jpg' },
-  { file: '/img/pinter.jpg', title: 'Diagnostic monitors in the control room of Wendelstein 7-X', artist: 'Siarhei Besarab', license: 'CC BY-SA 4.0', url: 'https://commons.wikimedia.org/wiki/File:Diagnostic_monitors_in_the_control_room_of_Wendelstein_7-X.jpg' },
-  { file: '/img/aegis.jpg', title: 'German terrestrial globe, circa 1725', artist: 'Mike Peel', license: 'CC BY-SA 4.0', url: 'https://commons.wikimedia.org/wiki/File:German_terrestrial_globe,_circa_1725_1.jpg' },
-  { file: '/img/sentra.jpg', title: 'Operation Mammoth arrest documents in British archives', artist: 'Unknown author', license: 'CC BY-SA 4.0', url: 'https://commons.wikimedia.org/wiki/File:Operation_Mammoth_arrest_documents_in_British_archives.jpg' },
-  { file: '/img/pac.jpg', title: 'Car factory assembly line, Opel factory in Gliwice', artist: 'Marek Ślusarczyk', license: 'CC BY 3.0', url: 'https://commons.wikimedia.org/wiki/File:001_Car_factory_assembly_line_-_Opel_factory_in_Gliwice,_Poland.jpg' },
+  { file: '/img/pinter.jpg', title: 'NOC-Architel', artist: 'Mike Reyher', license: 'CC BY 2.0', url: 'https://commons.wikimedia.org/wiki/File:NOC-Architel.jpg' },
+  { file: '/img/snowkeeper.jpg', title: 'BalticServers data center', artist: 'BalticServers.com', license: 'CC BY-SA 3.0', url: 'https://commons.wikimedia.org/wiki/File:BalticServers_data_center.jpg' },
+  { file: '/img/aegis.jpg', title: 'ISS041-E-55745 - View of Java', artist: 'NASA Earth Science and Remote Sensing Unit', license: 'Public domain', url: 'https://commons.wikimedia.org/wiki/File:ISS041-E-55745_-_View_of_Java.jpg' },
+  { file: '/img/sentra.jpg', title: 'European style folders dossiers', artist: 'unspecified', license: 'CC0', url: 'https://commons.wikimedia.org/wiki/File:European_style_folders_dossiers.jpg' },
+  { file: '/img/pac.jpg', title: 'BASF Ludwigshafen Werk bei Nacht', artist: 'Zavijava2', license: 'CC BY-SA 3.0', url: 'https://commons.wikimedia.org/wiki/File:BASF_24082014.png' },
   { file: '/img/ayu.jpg', title: 'Farmer harvesting rice, Kampung Rawa', artist: 'Crisco 1492', license: 'CC BY-SA 3.0', url: 'https://commons.wikimedia.org/wiki/File:Farmer_harvesting_rice,_Kampung_Rawa_2014-06-20.jpg' },
-  { file: '/img/kita.jpg', title: 'Legal Contract & Signature, Warm Tones', artist: 'Blogtrepreneur', license: 'CC BY 2.0', url: 'https://commons.wikimedia.org/wiki/File:Legal_Contract_%26_Signature_-_Warm_Tones.jpg' },
-  { file: '/img/rama.jpg', title: 'WS Form B-29 (Rawinsonde Report) partially filled out', artist: 'Famartin', license: 'CC BY-SA 4.0', url: 'https://commons.wikimedia.org/wiki/File:2017-10-05_06_45_36_WS_Form_B-29_(Rawinsonde_Report)_partially_filled_out_during_an_upper-air_observation_at_the_National_Weather_Service%27s_Baltimore-Washington_Weather_Forecast_Office_in_the_Dulles_section_of_Sterling,_Loudoun_County,_Virginia.jpg' },
-  { file: '/img/sinta.jpg', title: 'Whatsapp texting', artist: 'Helar Lukats', license: 'CC BY-SA 4.0', url: 'https://commons.wikimedia.org/wiki/File:Whatsapp_texting.jpg' },
-  { file: '/img/travel.jpg', title: 'Flight departure board at Canberra Airport', artist: 'Kgbo', license: 'CC BY-SA 4.0', url: 'https://commons.wikimedia.org/wiki/File:Flight_departure_board_at_Canberra_Airport,_November_2022.jpg' },
-  { file: '/img/risk.jpg', title: 'Sheet Lightning over Mt Wellington', artist: 'JJ Harrison', license: 'CC BY-SA 3.0', url: 'https://commons.wikimedia.org/wiki/File:Sheet_Lightning_over_Mt_Wellington.jpg' },
-  { file: '/img/pupuk.jpg', title: 'Flexible intermediate bulk containers, Fertilizer', artist: 'Cjp24', license: 'CC BY-SA 3.0', url: 'https://commons.wikimedia.org/wiki/File:Flexible_intermediate_bulk_containers-Fertilizer.jpg' },
-  { file: '/img/ghraha.jpg', title: 'City Traffic Illuminated, City Life Night', artist: 'OiMax', license: 'CC BY 2.0', url: 'https://commons.wikimedia.org/wiki/File:City_Traffic_Illuminated_City_Life_Night_City_Street_Night_Photography_Nightlife_Motion_(32861900291).jpg' },
-  { file: '/img/bangkit.jpg', title: 'Students at a school in Bangalore, India learning to code on Progate', artist: 'Nayakyashraj', license: 'CC BY-SA 4.0', url: 'https://commons.wikimedia.org/wiki/File:Students_at_a_school_in_Bangalore,_India_learning_to_code_on_Progate.jpg' },
+  { file: '/img/kita.jpg', title: 'Infruid\'s Self-Service BI Tool Dashboard', artist: 'Growthlakes', license: 'CC BY-SA 4.0', url: 'https://commons.wikimedia.org/wiki/File:Infruid%27s_Self-Service_BI_Tool_Dashboard.jpg' },
+  { file: '/img/rama.jpg', title: 'Simple-kanban-board', artist: 'Jeff.lasovski', license: 'CC BY-SA 3.0', url: 'https://commons.wikimedia.org/wiki/File:Simple-kanban-board-.jpg' },
+  { file: '/img/sinta.jpg', title: 'Rocket.Chat Screenshot', artist: 'Gabriel engel', license: 'CC BY-SA 4.0', url: 'https://commons.wikimedia.org/wiki/File:Rocket.Chat_Screenshot.png' },
+  { file: '/img/travel.jpg', title: 'Mobile boarding pass KLM', artist: 'Mtcv', license: 'CC BY-SA 3.0', url: 'https://commons.wikimedia.org/wiki/File:Mobile_boarding_pass_KLM.JPG' },
+  { file: '/img/risk.jpg', title: 'Qtstalker candlestick chart', artist: 'user:yndesai', license: 'CC0', url: 'https://commons.wikimedia.org/wiki/File:Qtstalker_candlestick_chart.png' },
+  { file: '/img/dsai.jpg', title: 'Artificial Neural Network with Chip', artist: 'mikemacmarketing', license: 'CC BY 2.0', url: 'https://commons.wikimedia.org/wiki/File:Artificial_Neural_Network_with_Chip.jpg' },
+  { file: '/img/nura.jpg', title: 'Digital Literacy Program', artist: 'Sathya Narayanan Subramanian', license: 'CC BY-SA 3.0', url: 'https://commons.wikimedia.org/wiki/File:Digital_Literacy_Program.jpg' },
+  { file: '/img/gts.jpg', title: 'Components of parking guidance and information system', artist: 'Z22', license: 'CC BY-SA 4.0', url: 'https://commons.wikimedia.org/wiki/File:Components_of_parking_guidance_and_information_system.jpg' },
+  { file: '/img/jetinno.jpg', title: 'Coffee vending machine', artist: 'shankar s.', license: 'CC BY 2.0', url: 'https://commons.wikimedia.org/wiki/File:I_had_a_terrific_strong_coffee_from_this_vending_machine_(48624680187).jpg' },
+  { file: '/img/pupuk.jpg', title: 'Kantor Utama PT Pupuk Kaltim Bontang', artist: 'Ezagren', license: 'CC BY-SA 3.0', url: 'https://commons.wikimedia.org/wiki/File:Kantor_Utama_PT_Pupuk_Kaltim_Bontang.jpg' },
+  { file: '/img/ghraha.jpg', title: 'Pekanbaru City 3 (HR Soebrantas Road)', artist: 'Wagino 20100516', license: 'CC BY-SA 3.0', url: 'https://commons.wikimedia.org/wiki/File:Pekanbaru_City_3.jpg' },
+  { file: '/img/bangkit.jpg', title: 'Participants at Wikemedia Hackathon at Rebase Code Camp', artist: 'Ewi Josepha', license: 'CC0', url: 'https://commons.wikimedia.org/wiki/File:Participants_at_Wikemedia_Hackathon_2024_at_Rebase_Code_Camp.jpg' },
 ];
